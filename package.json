@@ -1,0 +1,13 @@
+{
+    "name": "gitbook-plugin-onlineresources",
+    "version": "0.0.1",
+    "description": "This is my first GitBook plugin",
+    "engines": {
+        "gitbook": ">3.x.x"
+    },
+    "gitbook": {
+        "properties": {
+            }
+        }
+    }
+}
