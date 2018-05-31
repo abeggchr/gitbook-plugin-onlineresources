@@ -6,6 +6,15 @@
         "gitbook": ">1.x.x"
     },
     "gitbook": {
-        "properties": {}
+        "properties": {
+            "url": {
+                "type": "string",
+                "default": "https://bitly.com/",
+                "description": "It defines the base URL for the online resource."
+            }
+        }
+    },
+    "dependencies": {
+        "qrcode": "^1.2.0"
     }
 }
