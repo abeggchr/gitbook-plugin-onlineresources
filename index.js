@@ -3,7 +3,13 @@ module.exports = {
     hooks: {},
 
     // Map of new blocks
-    blocks: {},
+    blocks: {
+        onlineresources: {
+            process: function(block) {
+                return "Hello "+block.body+", How are you?";
+            }
+        }
+    },
 
     // Map of new filters
     filters: {}
