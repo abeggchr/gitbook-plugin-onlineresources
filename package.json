@@ -6,8 +6,6 @@
         "gitbook": ">3.x.x"
     },
     "gitbook": {
-        "properties": {
-            }
-        }
+        "properties": {}
     }
 }
