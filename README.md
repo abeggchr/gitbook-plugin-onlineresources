@@ -16,7 +16,8 @@ Display a link to your GitHub repo in your gitbook.
     "plugins": [ "onlineresources@git+https://github.com/abeggchr/gitbook-plugin-onlineresources" ],
     "pluginsConfig": {
         "onlineresources": {
-            "url": "https://pages.github.com/your/repo"
+            "url": "https://pages.github.com/your/repo",
+            "text": "Online Resources: "
         }
     }
 }

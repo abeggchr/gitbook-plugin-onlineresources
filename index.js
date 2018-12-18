@@ -16,7 +16,7 @@ module.exports = {
                     let basePath = this.config.values.pluginsConfig.onlineresources.url;
                     let link = basePath + articlePath;
                     let image = await QRCode.toDataURL(link);
-                    let info = `Online Resources ![Online Resources](${image})`;
+                    let info = `${this.config.values.pluginsConfig.onlineresources.text} ![Online Resources](${image})`;
 
                     // append "online resources" block
                     page.content = page.content + info;
