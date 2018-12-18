@@ -33,8 +33,8 @@ module.exports = {
                         info += `${newLine} ${this.config.values.pluginsConfig.onlineresources.text.below} ${newLine}`;
                     }
 
-                    console.log("DEBUG resources content replaced with:")
-                    console.log(info);
+                    // console.log("DEBUG resources content replaced with:")
+                    // console.log(info);
 
                     // append "online resources" block
                     page.content = page.content + info;
