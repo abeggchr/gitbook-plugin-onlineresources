@@ -7,7 +7,7 @@ module.exports = {
             if (this.output.name !== 'website') {
                 if (page.content.includes('.resources.md" %}')) {
                     // new line 
-                    const newLine = "\r\n";
+                    const newLine = "\r\n\r\n";
                     
                     // remove this line
                     const regex = /{% include "\.\/.*\.resources\.md" %}/
