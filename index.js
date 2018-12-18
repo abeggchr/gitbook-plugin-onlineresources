@@ -23,7 +23,7 @@ module.exports = {
                     if (this.config.values.pluginsConfig.onlineresources.text.left) {
                         info += `${this.config.values.pluginsConfig.onlineresources.text.left} `;
                     }
-                    info = `![Online Resources](${image}) `;
+                    info += `![Online Resources](${image}) `;
                     if (this.config.values.pluginsConfig.onlineresources.text.right) {
                         info += `${this.config.values.pluginsConfig.onlineresources.text.right}`;
                     }
