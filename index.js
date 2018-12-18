@@ -18,17 +18,17 @@ module.exports = {
                     let image = await QRCode.toDataURL(link);
                     let info = "";
                     if (this.config.values.pluginsConfig.onlineresources.text.above) {
-                        info = `${this.config.values.pluginsConfig.onlineresources.text.above} \n`;
+                        info += `${this.config.values.pluginsConfig.onlineresources.text.above} \n`;
                     }
                     if (this.config.values.pluginsConfig.onlineresources.text.left) {
-                        info = `${this.config.values.pluginsConfig.onlineresources.text.left} `;
+                        info += `${this.config.values.pluginsConfig.onlineresources.text.left} `;
                     }
                     info = `![Online Resources](${image}) `;
                     if (this.config.values.pluginsConfig.onlineresources.text.right) {
-                        info = `${this.config.values.pluginsConfig.onlineresources.text.right}`;
+                        info += `${this.config.values.pluginsConfig.onlineresources.text.right}`;
                     }
                     if (this.config.values.pluginsConfig.onlineresources.text.below) {
-                        info = `\n ${this.config.values.pluginsConfig.onlineresources.text.below} \n`;
+                        info += `\n ${this.config.values.pluginsConfig.onlineresources.text.below} \n`;
                     }
 
                     // append "online resources" block
