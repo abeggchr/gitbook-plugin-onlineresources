@@ -29,7 +29,7 @@ When generating a website, the resources file is included.
 When generating an eBook, a link to the resources file is shown as QR code.
 
 EBook:
-![EBook](./assets/ebook.jpg" "EBook")
+![EBook](./assets/ebook.jpg "EBook")
 
 Web:
-![Web](./assets/web.jpg" "Web")
+![Web](./assets/web.jpg "Web")
