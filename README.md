@@ -18,8 +18,10 @@ Display a link to your GitHub repo in your gitbook.
         "onlineresources": {
             "url": "https://pages.github.com/your/repo",
             "text": {
-                "before": "Online Resources: ",
-                "after": ""
+                "left": "Online Resources: ",
+                "right": "",
+                "above": "",
+                "below": "",
         }
     }
 }
