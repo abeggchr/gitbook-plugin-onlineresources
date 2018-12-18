@@ -21,7 +21,12 @@ Display a link to your GitHub repo in your gitbook.
                 "left": "Online Resources: ",
                 "right": "",
                 "above": "",
-                "below": "",
+                "below": ""
+            },
+            "qrCodeOptions": {
+                // see: https://www.npmjs.com/package/qrcode#qr-code-options
+                "margin": 0,
+            }
         }
     }
 }

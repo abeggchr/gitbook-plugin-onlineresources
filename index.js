@@ -15,7 +15,7 @@ module.exports = {
                     let articlePath = page.path.replace('.md', '.html').replace("\\", "/");
                     let basePath = this.config.values.pluginsConfig.onlineresources.url;
                     let link = basePath + articlePath;
-                    let image = await QRCode.toDataURL(link);
+                    let image = await QRCode.toDataURL(link, this.config.values.pluginsConfig.onlineresources.qrCodeOptions);
                     let info = "";
                     if (this.config.values.pluginsConfig.onlineresources.text.above) {
                         info += `${this.config.values.pluginsConfig.onlineresources.text.above} \n`;
