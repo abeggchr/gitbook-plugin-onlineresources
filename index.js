@@ -6,6 +6,8 @@ module.exports = {
         "page:before": async function(page) {
             if (this.output.name !== 'website') {
                 if (page.content.includes('.resources.md" %}')) {
+                    // new line 
+                    const newLine = "\r\n";
                     
                     // remove this line
                     const regex = /{% include "\.\/.*\.resources\.md" %}/
@@ -18,7 +20,7 @@ module.exports = {
                     let image = await QRCode.toDataURL(link, this.config.values.pluginsConfig.onlineresources.qrCodeOptions);
                     let info = "";
                     if (this.config.values.pluginsConfig.onlineresources.text.above) {
-                        info += `${this.config.values.pluginsConfig.onlineresources.text.above} \n`;
+                        info += `${this.config.values.pluginsConfig.onlineresources.text.above} ${newLine}`;
                     }
                     if (this.config.values.pluginsConfig.onlineresources.text.left) {
                         info += `${this.config.values.pluginsConfig.onlineresources.text.left} `;
@@ -28,7 +30,7 @@ module.exports = {
                         info += `${this.config.values.pluginsConfig.onlineresources.text.right}`;
                     }
                     if (this.config.values.pluginsConfig.onlineresources.text.below) {
-                        info += `\n ${this.config.values.pluginsConfig.onlineresources.text.below} \n`;
+                        info += `${newLine} ${this.config.values.pluginsConfig.onlineresources.text.below} ${newLine}`;
                     }
 
                     // append "online resources" block
